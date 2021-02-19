@@ -1,0 +1,21 @@
+# -*- yaml -*-
+#
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+#
+# A feature we'd like, is to align #define statement values. This isn't currently
+# supported, but maybe it will be someday? https://reviews.llvm.org/D28462
+---
+BasedOnStyle: Google
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+IndentWidth: 4
+KeepEmptyLinesAtTheStartOfBlocks: true
+BinPackParameters: false
+AlignConsecutiveDeclarations: true
+
+# Force pointers to the left
+DerivePointerAlignment: false
+PointerAlignment: Left
